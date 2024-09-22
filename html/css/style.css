@@ -2,21 +2,37 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: flex-start; 
-    gap: 20px; 
+    align-items: flex-start;
+    gap: 20px;
     padding: 20px;
-    overflow-x: auto; 
+    overflow-x: auto;
+}
 
-    .card {
-        width: 250px;
-        padding: 20px;
-        margin: 0; 
-        border: 2px solid #ccc;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        background-color: #f9f9f9;
-        text-align: center;
-        flex-shrink: 0;
-    }
-    
+.card {
+    width: 250px;
+    padding: 20px;
+    margin: 0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.card img {
+    width: 100%; /* The image will fill the card's width */
+    height: 200px; /* Set the same height for all images */
+    object-fit: cover; /* Ensures the image covers the space without stretching */
+    border-radius: 8px 8px 0 0; /* Keeps the top corners rounded */
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 1em;
+    color: #666;
 }
