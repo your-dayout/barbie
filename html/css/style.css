@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start; 
+    gap: 20px; 
+    padding: 20px;
+    overflow-x: auto; 
+
+    .card {
+        width: 250px;
+        padding: 20px;
+        margin: 0; 
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #f9f9f9;
+        text-align: center;
+        flex-shrink: 0;
+    }
+    
+}
